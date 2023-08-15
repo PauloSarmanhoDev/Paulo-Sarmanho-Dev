@@ -12986,14 +12986,6 @@ const Dh = ()=>d.jsxs(Lh, {
             className: "item",
             "data-aos": "fade-up",
             children: [d.jsx("img", {
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-            }), d.jsx("p", {
-                children: "next"
-            })]
-        }), d.jsxs("div", {
-            className: "item",
-            "data-aos": "fade-up",
-            children: [d.jsx("img", {
                 src: "https://icongr.am/devicon/dot-net-original-wordmark.svg?size=128&color=currentColor"
             }), d.jsx("p", {
                 children: ".Net"
