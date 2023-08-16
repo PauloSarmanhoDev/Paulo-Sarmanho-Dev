@@ -12590,13 +12590,13 @@ d.jsxs(wm, {
             }),
             desc: "Crud usando com funcionalidades de inserção, edição e exclusão."
         }), d.jsx(di, {
-            imgsrc: "/images/FB.png",
-            title: "Flappy Bird clone",
-            links: ["https://github.com/PauloSarmanhoDev/Flappy-Bird", "https://flappybird-clone-paulo.netlify.app/"],
+            imgsrc: "/images/PMDR.png",
+            title: "Pomodoro",
+            links: ["https://github.com/PauloSarmanhoDev/pomodoro", "https://pomodoro-paulo.netlify.app/"],
             techs: d.jsxs(d.Fragment, {
                 children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Wu, {})]
             }),
-            desc: "Estudo que fiz como forma de aprendizagem recriando o jogo flappy bird o mais fiel possível."
+            desc: "Site da ferramenta de gerenciamento de tempo. A técnica consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos. ."
         }), d.jsx(di, {
             imgsrc: "/images/FB.png",
             title: "Flappy Bird clone",
