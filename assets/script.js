@@ -13602,7 +13602,7 @@ const Gu = Dr(Yh)
                     children: "Sobre Mim"
                 }), d.jsx("p", {
                     "data-aos": "fade-up",
-                    children: "Olá! Meu nome é Paulo Sarmanho. e tenho 24 anos. Trabalho como desenvolvedor web, especializado em JavaScript, React e TypeScript. Além disso, também tenho experiência em desenvolvimento de backend com Node.js, java e criação de APIs."
+                    children: "Olá! Meu nome é Paulo Sarmanho e tenho 24 anos. Trabalho como desenvolvedor web, especializado em JavaScript, React e TypeScript. Além disso, também tenho experiência em desenvolvimento de backend com Node.js, java e criação de APIs."
                 }), d.jsx("p", {
                     id: "p2",
                     "data-aos": "fade-up",
