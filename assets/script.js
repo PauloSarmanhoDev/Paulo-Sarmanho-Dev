@@ -12557,9 +12557,9 @@ d.jsxs(wm, {
         children: "Confira alguns dos meus projetos"
     }), d.jsxs(xm, {
         children: [d.jsx(di, {
-            imgsrc: "",
-            title: "",
-            links: ["", ""],
+            imgsrc: "/images/CRUD.png",
+            title: "CRUD",
+            links: ["https://github.com/PauloSarmanhoDev/Lista-de-clientes-localstorage", "https://lista-de-clientes-localstorage-paulo.netlify.app/"],
             techs: d.jsxs(d.Fragment, {
                 children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Qu, {})]
             }),
