@@ -12573,9 +12573,9 @@ d.jsxs(wm, {
             }),
             desc: "Um site que exibe a cotação de cripto moedas em tempo real usando uma API."
         }), d.jsx(di, {
-            imgsrc: "",
-            title: "",
-            links: ["", ""],
+            imgsrc: "/images/PZ.png",
+            title: "Site de Pizzaria",
+            links: ["https://github.com/PauloSarmanhoDev/pizzaria", "https://pizzaria-do-paulo.netlify.app/"],
             techs: d.jsxs(d.Fragment, {
                 children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Qu, {})]
             }),
