@@ -11366,7 +11366,7 @@ const dm = ps`
                 })]
             }), d.jsx("p", {
                 id: "info",
-                children: "Desenvolvedor Frontend"
+                children: "Desenvolvedor Full Stack"
             })]
         }), d.jsx(hm, {})]
     })
