@@ -11560,6 +11560,15 @@ const dm = ps`
       margin-right: 5px;
     }
 
+    img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    
+        border-radius: 8px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
     .buttons {
       flex-direction: column;
 
@@ -12557,13 +12566,13 @@ d.jsxs(wm, {
         children: "Confira alguns dos meus projetos"
     }), d.jsxs(xm, {
         children: [d.jsx(di, {
-            imgsrc: "/images/CRUD.png",
-            title: "CRUD",
-            links: ["https://github.com/PauloSarmanhoDev/Lista-de-clientes-localstorage", "https://lista-de-clientes-localstorage-paulo.netlify.app/"],
+            imgsrc: "/images/PZ.png",
+            title: "Site de Pizzaria",
+            links: ["https://github.com/PauloSarmanhoDev/pizzaria", "https://pizzaria-do-paulo.netlify.app/"],
             techs: d.jsxs(d.Fragment, {
                 children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Qu, {})]
             }),
-            desc: ""
+            desc: "Site fictício de uma pizzaria om informações sobre ela."
         }), d.jsx(di, {
             imgsrc: "/images/CH.png",
             title: "Cripto Hoje",
@@ -12573,13 +12582,13 @@ d.jsxs(wm, {
             }),
             desc: "Um site que exibe a cotação de cripto moedas em tempo real usando uma API."
         }), d.jsx(di, {
-            imgsrc: "/images/PZ.png",
-            title: "Site de Pizzaria",
-            links: ["https://github.com/PauloSarmanhoDev/pizzaria", "https://pizzaria-do-paulo.netlify.app/"],
+            imgsrc: "/images/CRUD.png",
+            title: "CRUD",
+            links: ["https://github.com/PauloSarmanhoDev/Lista-de-clientes-localstorage", "https://lista-de-clientes-localstorage-paulo.netlify.app/"],
             techs: d.jsxs(d.Fragment, {
                 children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Qu, {})]
             }),
-            desc: ""
+            desc: "Crud usando com funcionalidades de inserção, edição e exclusão."
         }), d.jsx(di, {
             imgsrc: "/images/FB.png",
             title: "Flappy Bird clone",
@@ -12588,6 +12597,22 @@ d.jsxs(wm, {
                 children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Wu, {})]
             }),
             desc: "Estudo que fiz como forma de aprendizagem recriando o jogo flappy bird o mais fiel possível."
+        }), d.jsx(di, {
+            imgsrc: "/images/FB.png",
+            title: "Flappy Bird clone",
+            links: ["https://github.com/PauloSarmanhoDev/Flappy-Bird", "https://flappybird-clone-paulo.netlify.app/"],
+            techs: d.jsxs(d.Fragment, {
+                children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Wu, {})]
+            }),
+            desc: "Estudo que fiz como forma de aprendizagem recriando o jogo flappy bird o mais fiel possível."
+        }), d.jsx(di, {
+            imgsrc: "",
+            title: "Mais projetos",
+            links: ["", ""],
+            techs: d.jsxs(d.Fragment, {
+                children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Wu, {})]
+            }),
+            desc: "Veja meus outros projetos."
         })]
     })]
 }))
