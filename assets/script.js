@@ -13045,7 +13045,7 @@ const Dh = () => d.jsxs(Lh, {
                 children: [d.jsx("img", {
                     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
                 }), d.jsx("p", {
-                    children: "Node"
+                    children: "NodeJS"
                 })]
             }), d.jsxs("div", {
                 className: "item",
