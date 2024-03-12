@@ -11313,12 +11313,7 @@ const dm = ps`
                 onClick: () => n("projects"),
                 onMouseEnter: e,
                 onMouseLeave: t,
-                children: "Projetos"
-            }), d.jsx("a", {
-                onClick: () => n("skills"),
-                onMouseEnter: e,
-                onMouseLeave: t,
-                children: "Habilidades"
+                children: "Projetos"          
             }), d.jsx("a", {
                 onClick: () => n("services"),
                 onMouseEnter: e,
@@ -11379,7 +11374,7 @@ const dm = ps`
     , wm = je.section`
   width: 100%;
 
-  background: rgba(255, 255, 255, 1);
+  background: white;
 
   display: flex;
   justify-content: center;
@@ -12654,7 +12649,7 @@ const Th = () => (He.useEffect(() => {
 
   z-index: 9999999999999999;
 
-  background-color: white;
+  background-color: rgba(11, 11, 11, 1);
 
   padding-top: 30px;
 
@@ -12701,15 +12696,16 @@ const Th = () => (He.useEffect(() => {
     svg {
       color: rgba(70, 107, 187, 1);
       fill: rgba(70, 107, 187, 1);
+
       font-size: 40px;
     }
 
     h2 {
-      color: black;
+      color: rgba(57, 157, 237, 1);
     }
 
     p {
-      color: black;
+      color: #f5f5f5;
     }
   }
 
@@ -12878,7 +12874,7 @@ const Dh = () => d.jsxs(Lh, {
 
   z-index: 9999999999999999;
 
-  background-color: transparent;
+  background-color: tranparent;
   position: relative;
   padding-top: 20px;
 
@@ -13057,7 +13053,7 @@ const Dh = () => d.jsxs(Lh, {
                 children: [d.jsx("img", {
                     src: "/images/microsoft-sql-server-logo-svgrepo-com.svg"
                 }), d.jsx("p", {
-                    children: "SQL Server"
+                    children: "Sql Server"
                 })]
             }), d.jsxs("div", {
                 className: "item",
@@ -13065,7 +13061,7 @@ const Dh = () => d.jsxs(Lh, {
                 children: [d.jsx("img", {
                     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
                 }), d.jsx("p", {
-                    children: "mysql"
+                    children: "MySql"
                 })]
             }), d.jsxs("div", {
                 className: "item",
@@ -13606,7 +13602,7 @@ const Gu = Dr(Yh)
                 window.open(n, "_blank")
             }
             , g = () => {
-                const href = "/documents/Paulo Sarmanho Dev.pdf";
+                const href = "/documents/Dev Paulo Sarmanho.pdf";
                 window.location.href = href;
             }
             ;
@@ -13625,7 +13621,7 @@ const Gu = Dr(Yh)
                         children: "Sobre Mim"
                     }), d.jsx("p", {
                         "data-aos": "fade-up",
-                        children: "Olá! Meu nome é Paulo Sarmanho e tenho 24 anos. Trabalho como desenvolvedor web."
+                        children: "Olá! Meu nome é Paulo Sarmanho e tenho 24 anos. Trabalho como desenvolvedor web, especializado em JavaScript, React e TypeScript. Além disso, também tenho experiência em desenvolvimento de backend com Node.js, java e criação de APIs."
                     }), d.jsx("p", {
                         id: "p2",
                         "data-aos": "fade-up",
@@ -13673,13 +13669,7 @@ const Gu = Dr(Yh)
         })
     }
     , Jh = () => d.jsxs(im, {
-        children: [d.jsx(ym, {}), d.jsx(sl, {
-            color: "rgba(71, 127, 187, 1)"
-        }), d.jsx(Zh, {}), d.jsx(Hh, {}), d.jsx(Th, {}), d.jsx(Dh, {}), d.jsx(sl, {
-            color: "white"
-        }), d.jsx(Gh, {}), d.jsx(sl, {
-            color: "white"
-        }), d.jsx(Xh, {})]
+        children: [d.jsx(ym, {}), d.jsx(sl, {}), d.jsx(Zh, {}), d.jsx(Hh, {}), d.jsx(Th, {}), d.jsx(Dh, {}), d.jsx(sl, {}), d.jsx(Gh, {}), d.jsx(sl, {}), d.jsx(Xh, {})]
     });
 function ev() {
     return d.jsxs(He.Fragment, {
