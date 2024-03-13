@@ -11235,7 +11235,7 @@ const dm = ps`
   animation-delay: 1s;
 `
     , hm = () => {
-        const e = () => {
+        /*const e = () => {
             window.scroll({
                 top: window.innerHeight,
                 behavior: "smooth"
@@ -11247,7 +11247,7 @@ const dm = ps`
             children: d.jsx(pm, {
                 children: d.jsx(mm, {})
             })
-        })
+        })*/
     }
     , vm = je.nav`
   width: 100%;
@@ -11404,16 +11404,14 @@ const dm = ps`
   }
 `
     , xm = je.div`
-  width: 90%;
-  z-index: 9;
-
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  
 
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 22px;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -11422,7 +11420,9 @@ const dm = ps`
   }
 `
     , km = je.div`
-  width: 100%;
+  width: 300px;
+  height: 250px;
+  
 
   display: flex;
   justify-content: center;
@@ -11459,13 +11459,13 @@ const dm = ps`
     text-align: start;
   }
 
-  margin: 0 9px;
+  
 
   img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    width: 300px;
+    height: 200px;
 
+    object-fit: cover;
     border-radius: 8px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -12561,53 +12561,53 @@ const Th = () => (He.useEffect(() => {
             children: "Confira alguns dos meus projetos"
         }), d.jsxs(xm, {
             children: [d.jsx(di, {
-                imgsrc: "/images/PZ.png",
+                imgsrc: "/images/300x150.jpg",
                 title: "Site de Pizzaria",
                 links: ["https://github.com/PauloSarmanhoDev/pizzaria", "https://pizzaria-do-paulo.netlify.app/"],
                 techs: d.jsxs(d.Fragment, {
-                    children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Qu, {})]
+                    children: []
                 }),
-                desc: "Site fictício de uma pizzaria om informações sobre ela."
+                desc: ""
             }), d.jsx(di, {
-                imgsrc: "/images/CH.png",
+                imgsrc: "/images/300x150.jpg",
                 title: "Cripto Hoje",
                 links: ["https://github.com/PauloSarmanhoDev/cotacao-cripto", "https://criptoshoje.netlify.app/"],
                 techs: d.jsxs(d.Fragment, {
-                    children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Wu, {})]
+                    children: []
                 }),
-                desc: "Um site que exibe a cotação de cripto moedas em tempo real usando uma API."
+                desc: ""
             }), d.jsx(di, {
-                imgsrc: "/images/CRUD.png",
+                imgsrc: "/images/300x150.jpg",
                 title: "CRUD",
                 links: ["https://github.com/PauloSarmanhoDev/Lista-de-clientes-localstorage", "https://lista-de-clientes-localstorage-paulo.netlify.app/"],
                 techs: d.jsxs(d.Fragment, {
-                    children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Qu, {})]
+                    children: []
                 }),
-                desc: "Crud usando com funcionalidades de inserção, edição e exclusão."
+                desc: ""
             }), d.jsx(di, {
-                imgsrc: "/images/PMDR.png",
+                imgsrc: "/images/300x150.jpg",
                 title: "Pomodoro",
                 links: ["https://github.com/PauloSarmanhoDev/pomodoro", "https://pomodoro-paulo.netlify.app/"],
                 techs: d.jsxs(d.Fragment, {
-                    children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Wu, {})]
+                    children: []
                 }),
-                desc: "Site da ferramenta de gerenciamento de tempo. A técnica consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos. ."
+                desc: ""
             }), d.jsx(di, {
-                imgsrc: "/images/FB.png",
+                imgsrc: "/images/300x150.jpg",
                 title: "Flappy Bird clone",
                 links: ["https://github.com/PauloSarmanhoDev/Flappy-Bird", "https://flappybird-clone-paulo.netlify.app/"],
                 techs: d.jsxs(d.Fragment, {
-                    children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Wu, {})]
+                    children: []
                 }),
-                desc: "Estudo que fiz como forma de aprendizagem recriando o jogo flappy bird o mais fiel possível."
+                desc: ""
             }), d.jsx(di, {
-                imgsrc: "",
+                imgsrc: "/images/300x150.jpg",
                 title: "Mais projetos",
-                links: ["", ""],
+                links: ["",""],
                 techs: d.jsxs(d.Fragment, {
-                    children: [d.jsx(pi, {}), " ", d.jsx(mi, {}), " ", d.jsx(Wu, {})]
+                    children: []
                 }),
-                desc: "Veja meus outros projetos."
+                desc: ""
             })]
         })]
     }))
