@@ -1,25 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" sizes="32x32" href="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.cdnfonts.com/css/boldstrom" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!--EmailJS-->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon-rmdev.ico">
+
   <title>Paulo Sarmanho</title>
-  <script type="module" crossorigin src="/assets/script.js"></script>
-  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="Site Paulo Sarmanho">
+
 </head>
 
 <body>
-  <div id="root"></div>
+
+  <!-- Botão do tema -->
+  <button id="color-toggle" class="color-toggle-button">
+    <i id="theme-icon" class="fas fa-lightbulb"></i>
+  </button>
+
+  <!-- Botão "Voltar ao Topo" -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container flex-row">
+      <div class="header__logo">
+        <a href="#hero"><strong>Paulo Sarmanho</strong></a>
+      </div>
+      <nav>
+        <ul class="header__menu flex-row">
+          <li>
+            <a href="#hero">Início</a>
+          </li>
+          <li>
+            <a href="#team">Profissional</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+          <li>
+            <a href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="right flex-center">
+        <a href="#contact" class="btn btn-secondary">Fale comigo</a>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- INÍCIO -->
+  <section id="hero" class="container flex-row">
+    <div id="particles-js"></div>
+    <div class="hero__content">
+      <h1 class="title">Paulo Sarmanho <span class="text-blue">Desenvolvedor Fullstack</span></h1>
+      <div class="footer__bottom-icons">
+        <p></p>
+        <a href="https://www.linkedin.com/in/paulo-sarmanho/" class="linkedin" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/PauloSarmanhoDev/" class="github" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <br>
+      <a href="#team" class="btn btn-primary">Conhecer mais</a>
+    </div>
+    <div class="hero__img">
+      <img style="border-radius: 50px;" src="assets/img/hero.png" alt="">
+    </div>
+  </section>
+
+  <!-- PROFISSIONAL -->
+  <section id="team" class="container">
+    <h5 class="section-subheading text-center" data-aos="fade-up">Conheça o Profissional</h5>
+    <h2 class="section-heading left right text-center" data-aos="fade-up" data-aos-delay="100">Experiência e Dedicação
+      em Desenvolvimento Web</h2>
+
+    <div class="members">
+      <div class="member">
+        <div class="member__img" data-aos="fade-right" data-aos-delay="200">
+          <img style="border-radius: 50px;" src="assets/images/16541248521.png" alt="">
+        </div>
+        <div class="member__content" data-aos="fade-left" data-aos-delay="300">
+          <h1>Paulo de Tarso Sarmanho de Carvalho</h1>
+          <span>Desenvolvedor Web</span>
+          <p>Sou um desenvolvedor web apaixonado por transformar ideias em realidade digital. Há mais de um
+            ano, venho criando e otimizando sites e aplicações institucionais, empresariais e comerciais, usando
+            tecnologias como
+            HTML, CSS, JavaScript, .Net e React Native.
+            Como autodidata, aprendi a me adaptar e a buscar soluções web inovadoras e de qualidade, sempre entendendo
+            as necessidades de cada cliente. Além da minha experiência prática, estou cursando Engenharia de Computação,
+            ampliando meus conhecimentos teóricos e acadêmicos.</p>
+          <div class="member__skills">
+            <h3 class="skills-title">Skills</h3>
+            <div class="skills-list">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+              </ul>
+              <ul>
+                <li>.Net</li>
+                <li>Asp.Net</li>
+                <li>React Native</li>
+                <li>Angular</li>
+              </ul>
+              <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Figma</li>
+                <li>Edição de Vídeo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projects">
+    <div class="container">
+      <h5 class="section-subheading" data-aos="fade-up">Projetos</h5>
+      <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">
+        Principais Projetos que fiz ao longo da minha carreira
+      </h2>
+      <div class="projects">
+
+        <!-- Projeto -->
+        <div class="project">
+          <div width="500px" height="500px" class="project__img" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/conectar.gif" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="220">
+            <h3 class="project__category">Projeto Real</h3>
+            <h3 class="project__title">
+              Site para o Projeto Conectar
+            </h3>
+            <p align="justify" class="project__text">
+              Projeto Conectar, é uma instituição sem fins econômicos que
+              desenvolve projetos sociais em diversos nichos da sociedade. Promovendo atenção, assistência e escuta
+              ativa para pessoas em situação de rua e realizando o acompanhamento das crianças de comunidades em
+              situação de alta vulnerabilidade socioeconômica, por meio da assistência médica, odontológica e atividades
+              culturais.
+            </p>
+            <a href="https://projeto-conectar.netlify.app/" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+
+        <!-- Projeto -->
+        <div class="project">
+          <div class="project__img" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/meteora.gif" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="220">
+            <h3 class="project__category">Projeto de Estudo</h3>
+            <h3 class="project__title">
+              MVC
+            </h3>
+            <p align="justify" class="project__text">
+              Desenvolvido para oferecer uma experiência única, o site reflete a essência do skateboarding com design
+              intuitivo e uma plataforma de compras segura e dinâmica. Navegue, escolha e compre com facilidade.
+            </p>
+            <a href="https://loja-meteora.netlify.app/" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+
+        <!-- Projeto -->
+        <div class="project">
+          <div class="project__img" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/criptos.gif" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="220">
+            <h3 class="project__category">Projeto de Estudo</h3>
+            <h3 class="project__title">
+              Criptos Hoje
+            </h3>
+            <p align="justify" class="project__text">
+              Desenvolvido para destacar a criatividade e inovação, este portfólio online exibe os melhores trabalhos de
+              design em uma interface limpa e intuitiva. Descubra, explore e inspire-se.
+            </p>
+            <a href="https://criptoshoje.netlify.app" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+
+        <!-- Projeto -->
+        <div class="project">
+          <div class="project__img" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/meteora.gif" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="220">
+            <h3 class="project__category">Projeto de Estudo</h3>
+            <h3 class="project__title">
+              E-COMMERCE
+            </h3>
+            <p align="justify" class="project__text">
+              Desenvolvido para oferecer uma experiência única, o site reflete a essência do skateboarding com design
+              intuitivo e uma plataforma de compras segura e dinâmica. Navegue, escolha e compre com facilidade.
+            </p>
+            <a href="https://loja-meteora.netlify.app/" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+
+        <!-- Projeto -->
+        <div class="project">
+          <div class="project__img" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/pizzaria.gif" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="220">
+            <h3 class="project__category">Projeto de Estudo</h3>
+            <h3 class="project__title">
+              Landing page de Pizzaria
+            </h3>
+            <p align="justify" class="project__text">
+              Aqui você poderá ver todos meus projetos reais e pessoais. Uma lista completa com detalhes do projeto e
+              tecnologias usadas.sdvvsdvsdvsvsdvsvs
+
+            </p>
+            <a href="https://pizzaria-do-paulo.netlify.app" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+
+        <!-- Projeto -->
+        <div class="project">
+          <div class="project__img" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/meteora.gif" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="220">
+            <h3 class="project__category">Desenvolvimento Personalizado</h3>
+            <h3 class="project__title">
+              E-COMMERCE
+            </h3>
+            <p align="justify" class="project__text">
+              Desenvolvido para oferecer uma experiência única, o site reflete a essência do skateboarding com design
+              intuitivo e uma plataforma de compras segura e dinâmica. Navegue, escolha e compre com facilidade.
+            </p>
+            <a href="/Projetos.html" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section id="contact">
+    <footer data-aos="fade-up">
+      <div class="container">
+        <h5 class="section-subheading" data-aos="fade-up">Contato</h5>
+        <div class="footer__content">
+
+          <!--<div class="footer__menu">
+            <div class="">
+              <p href=""><strong>Paulo Sarmanho</strong></p>
+              <a href="mailto:paulodetarso99@live.com">paulodetarso99@live.com</a>
+            </div>
+          </div>-->
+
+          <div class="footer__menu">
+            <h3 class="footer__menu-title">Email</h3>
+            <ul class="footer__menu-list">
+              <li><a href="mailto:paulodetarso99@live.com" target="_blank">paulodetarso99@live.com</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__menu">
+            <h3 class="footer__menu-title">Whatsapp</h3>
+            <ul class="footer__menu-list">
+              <li><a href="https://web.whatsapp.com/send?phone=5591989505392" target="_blank">91 98950-5392</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__menu">
+            <h3 class="footer__menu-title">Linkedin</h3>
+            <ul class="footer__menu-list">
+              <li><a href="https://www.linkedin.com/in/paulo-sarmanho/"
+                  target="_blank">linkedin.com/in/paulo-sarmanho</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__menu">
+            <h3 class="footer__menu-title">Github</h3>
+            <ul class="footer__menu-list">
+              <li><a href="https://github.com/PauloSarmanhoDev/" target="_blank">github.com/PauloSarmanhoDev</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-icons">
+            <p>Siga-me</p>
+            <a href="https://www.linkedin.com/in/paulo-sarmanho/" class="linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/PauloSarmanhoDev/" class="github" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+
+          </div>
+          <p>&copy; 2024 Paulo Sarmanho. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- FONTAWESOME -->
+  <script src="assets/js/fontawesome.min.js"></script>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/themeMode.js"></script>
+  <script src="assets/js/emailForm.js"></script>
+  <script src="assets/js/voltarTopo.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Inicialização do AOS -->
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
